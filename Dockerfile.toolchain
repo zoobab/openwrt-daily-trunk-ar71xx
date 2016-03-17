@@ -1,3 +1,5 @@
+FROM zoobab/openwrt-daily-trunk-ar71xx-base
+
 USER openwrt
 WORKDIR /home/openwrt
 RUN git clone --quiet https://github.com/mirrors/openwrt.git
