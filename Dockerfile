@@ -17,4 +17,6 @@ WORKDIR /home/openwrt/openwrt
 RUN echo "CONFIG_TARGET_ar71xx=y" > .config
 RUN make defconfig
 RUN make prereq
-RUN make || make -j1 V=s
+RUN make tools
+RUN make toolchain
+RUN make
