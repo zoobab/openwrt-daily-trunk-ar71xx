@@ -1,4 +1,4 @@
-FROM zoobab/openwrt-daily-trunk-ar71xx-base
+FROM zoobab/openwrt-base
 
 USER openwrt
 WORKDIR /home/openwrt
