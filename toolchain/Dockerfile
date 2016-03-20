@@ -2,7 +2,7 @@ FROM zoobab/openwrt-base
 
 USER openwrt
 WORKDIR /home/openwrt
-RUN git clone --quiet https://github.com/mirrors/openwrt.git
+RUN git clone --depth=1 https://github.com/mirrors/openwrt.git
 WORKDIR /home/openwrt/openwrt
 RUN echo "CONFIG_TARGET_ar71xx=y" > .config
 RUN make defconfig
